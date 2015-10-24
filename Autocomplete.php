@@ -93,7 +93,7 @@ class Autocomplete extends InputWidget
         $view = $this->getView();
         AutocompleteAsset::register($view);
         if ($this->styleAsset) {
-            call_user_func([$this->styleAsset, 'register'], [$view]);
+            call_user_func([$this->styleAsset, 'register'], $view);
         }
 
         $clientOptions = $this->clientOptions;
@@ -105,7 +105,7 @@ class Autocomplete extends InputWidget
         }
 
         $jsonClientOptions = empty($clientOptions) ? '' : Json::encode($clientOptions);
-        $js = "jQuery.('#{$this->options['id']}).devbridgeAutocomplete({$jsonClientOptions});";
+        $js = "jQuery('#{$this->options['id']}').devbridgeAutocomplete({$jsonClientOptions});";
         $view->registerJs($js);
     }
 }
