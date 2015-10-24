@@ -1,0 +1,23 @@
+{
+	"name": "maddoger/yii2-jquery-autocomplete",
+	"description": "jQuery JQuery Autocomplete extension for the Yii 2 framework",
+	"keywords": ["yii", "autocomplete", "jquery"],
+	"type": "yii2-extension",
+	"license": "Apache License",
+	"support": {
+		"source": "https://github.com/maddoger/yii2-jquery-autocomplete"
+	},
+	"authors": [
+		{
+			"name": "Vitaliy Syrchikov",
+			"email": "maddoger@gmail.com"
+		}
+	],
+	"require": {
+		"yiisoft/yii2": "*",
+		"bower-asset/devbridge-autocomplete": "*"
+	},
+	"autoload": {
+		"psr-4": { "maddoger\\widgets\\": "" }
+	}
+}
